@@ -1,2 +1,14 @@
 # NewsWebCrawler
-Sub Project 1: Hybrid web crawler/scrapper to extract headers given an input query. This project aims to be the basis from a larger one that encompasses data mining, machine learning and data analytics.
+
+
+### Crawling and Scrapping resources
+
+| Task           | Language | Framework/Library    | Website                                          |
+|----------------|----------|----------------------|--------------------------------------------------|
+| **Web Crawling**| **Python**| Scrapy               | [Scrapy](https://docs.scrapy.org/en/latest/)                |
+|                | **Go**   | Colly                | [Colly](https://go-colly.org/)       |
+|                |          | Selenium      | https://selenium-python.readthedocs.io/ |
+|                |          |                      |                                                  |
+| **Web Scraping**| **Python**| Requests      | [Requests](https://docs.python-requests.org/en/master/)           |
+|                |          | BeautifulSoup        | [Beautiful Soup](https://pypi.org/project/beautifulsoup4/) |
+|                |     **Go**   | goquery           |  [Goquery](https://github.com/PuerkitoBio/goquery)|
