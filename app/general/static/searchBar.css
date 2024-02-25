@@ -1,0 +1,16 @@
+#searchBarContainer {
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+}
+
+#inputBox {
+  margin-top: 20vh;
+  height: 9vh;
+  width: 40vw;
+}
+
+#IDK {
+  height: 70vh;
+  width: 100%;
+}
