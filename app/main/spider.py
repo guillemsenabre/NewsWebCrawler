@@ -34,12 +34,3 @@ class BasicSpider():
         links = [a["href"] for a in tags.select("a:has(h3)") if "href" in a.attrs]
         
         return links
-
-
-spider1 = BasicSpider("Spider1")
-
-my_input = "guillem senabre prades"
-
-links = spider1.get_links(my_input)
-
-print(links)
