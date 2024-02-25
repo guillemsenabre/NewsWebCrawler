@@ -1,36 +1,43 @@
 from bs4 import BeautifulSoup
 import requests
 
-def crawl_data():
+class BasicSpider():
+    def __init__(self, name):
+        # Each object has is own identifier
+        self.name = str(name)
 
-  # Dyanimc query
-  query = input(f"Crawl data from: ")
+    def get_links(self, query):
+    
+        # The input query is comming from the frontend
 
-  # Google URL, can Change to other browsers as well
-  url = "https://www.google.com/search"
+        # Google URL, can Change to other browsers as well
+        #although Google has one of the best search engines right now
+        url = "https://www.google.com/search"
 
-  # input parameters (query, ...)
-  params = {"q": str(query)}  # add "hl":"en" to get english results
+        # pass form (query) data and customize web page behaviour
+        # add "hl":"en" to get english results
+        params = {"q": str(query), "sort": "by_date"} 
 
-  headers = {
-      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
-  }
-  
-  # Response from the search (tags is a bs4 object)
-  tags = BeautifulSoup(
-      requests.get(url, params=params, headers=headers).content, "html.parser"
-  )
+        # Information about the request and response
+        # User-Agent identifies the software making the request
+        # It should follow robots.txt later on
+        headers = {
+            "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
+        }
+        
+        # Response from the search (tags is a bs4 object)
+        tags = BeautifulSoup(
+            requests.get(url, params=params, headers=headers).content, "html.parser"
+        )
 
-  # Limit of returned links
-  num_links = 5
+        # Limit of returned links
+        links = [a["href"] for a in tags.select("a:has(h3)")]
+        
+        return links
 
-  # loop to retrieve the link from the <a> tag
-  for index in range(num_links):
-      a = tags.select("a:has(h3)")[index]
-      print(a["href"])  
-  
-  return "Search completed!"
 
-if __name__=="__main__":
-   crawl_data()
+spider1 = BasicSpider("Spider1")
 
+my_input = "guillem senabre prades"
+
+spider1.get_links(my_input)
