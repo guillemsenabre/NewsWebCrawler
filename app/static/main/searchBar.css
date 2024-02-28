@@ -7,6 +7,21 @@
 
 #inputBox {
   margin-top: 20vh;
-  height: 9vh;
-  width: 40vw;
+  height: 11vh;
+  width: 45vw;
+  outline: none; /* Removes hoverihg outline*/
+  background-color: #1e1f20;
+  color: #acb0b4;
+  font-size: 3vh;
+  border-radius: 6vh;
+  border: none;
+  padding: 0;
+  padding-left: 2vw;
+  transition: background-color 0.2s;
+  transition:  width 0.8s;
+}
+
+#inputBox:hover {
+  background-color: #282a2c;
+  width: 47vw;
 }
