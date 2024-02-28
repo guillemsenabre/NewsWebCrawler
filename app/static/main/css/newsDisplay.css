@@ -1,0 +1,27 @@
+#newsDisplayerContainer {
+  margin: 0;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131314;
+}
+
+#mainText {
+  color: #acb0b4;
+}
+
+#toggleText {
+  background-image: radial-gradient(#594dcd, #c41796, #f13628);
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari compatibility */
+  -webkit-text-fill-color: transparent;
+}
+
+.mainTextStyle {
+  margin: 0;
+  font-family: CodecBold;
+  font-size: 15vh;
+}
