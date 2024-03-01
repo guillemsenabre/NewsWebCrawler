@@ -10,10 +10,7 @@ class BasicSpider():
         #although Google has one of the best search engines right now
         self.url = "https://www.google.com/search"
 
-    def get_data(self):
-
-        query = input("Input query: ")
-        
+    def get_data(self, query):
         response_tree = self._get_response(self.url, query)
         links_and_h3 = self._get_links_and_headers(response_tree)
 
