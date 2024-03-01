@@ -17,9 +17,7 @@ class BasicSpider():
         response_tree = self._get_response(self.url, query)
         links_and_h3 = self._get_links_and_headers(response_tree)
 
-        #links = [a["href"] for a in website_tree.select("a:has(h3)") if "href" in a.attrs]
-        print(links_and_h3)
-        return "finished"
+        return links_and_h3
 
     def _get_response(self, url, query):
         # pass form (query) data and customize web page behaviour
