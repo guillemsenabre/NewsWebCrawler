@@ -3,7 +3,7 @@ import requests
 
 class BasicSpider():
     def __init__(self, name):
-        # Each object has is own identifier
+        # Each spider has is own identifier
         self.name = str(name)
 
         # Google URL, can Change to other browsers as well
