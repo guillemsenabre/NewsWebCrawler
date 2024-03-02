@@ -4,24 +4,8 @@ submitBtn = document.getElementById("searchBtn");
 
 let isVisible = true;
 
-//If the button is clicked, fetch data (using arrow function)
-submitBtn.addEventListener('click', () => {
-  query = inputBox.value;
-  if (query !== ''){
-    textFadeOut();
-    fetchQueryData();
-  }
-});
 
-//If the user press enter key (13), fetch data (using anonymous function)
-inputBox.addEventListener('keydown', function(e){
-  query = inputBox.value;
-  if (e.keyCode === 13 && query !== '') {
-    textFadeOut();
-    fetchQueryData(query);
-  }
-});
-
+      // FETCH QUERY DATA FUNCTION //
 async function fetchQueryData(query) {
 
   // Use fetch to send query to Flask route /parse_query
@@ -39,6 +23,26 @@ async function fetchQueryData(query) {
     console.error('Error fetching data:', error);
   });
 }
+
+//If the button is clicked, fetch data (using arrow function)
+submitBtn.addEventListener('click', () => {
+  query = inputBox.value;
+  if (query !== ''){
+    textFadeOut();
+    fetchQueryData();
+  }
+});
+
+//If the user press enter key (13), fetch data (using anonymous function)
+inputBox.addEventListener('keydown', (e) => {
+  query = inputBox.value;
+  if (e.keyCode === 13 && query !== '') {
+    textFadeOut();
+    fetchQueryData(query);
+  }
+});
+
+
 
 
 function textFadeOut () {
