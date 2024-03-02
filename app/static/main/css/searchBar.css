@@ -17,14 +17,34 @@
   border: none;
   padding: 0;
   padding-left: 2vw;
+  padding-right: 6vw; /*To fit submit btn inside the input*/
   box-shadow: 0vh 0vh 0vh #1e1f20;
-  transition: background-color 0.8s;
-  transition:  width 0.8s;
-  
+  transition:
+    background-color 0.8s,
+    width 0.8s;
 }
 
 #inputBox:hover {
   background-color: #282a2c;
   box-shadow: 0vh 0vh 1vh #1e1f20;
   width: 47vw;
+}
+
+#searchBtn {
+  margin-left: -6vw; /*To fit submit btn inside the input*/
+  height: 6vh;
+  width: 6vh;
+  font-size: 3vh;
+  background-color: transparent;
+  background-image: url(../../media/submit.png);
+  background-size: cover;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  color: transparent;
+  transition: background-color 0.2s;
+}
+
+#searchBtn:hover {
+  background-color: #282a2c;
 }

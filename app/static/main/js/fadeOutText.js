@@ -2,6 +2,7 @@ text = document.getElementById("mainTextContainer");
 inputBox = document.getElementById("inputBox");
 let isVisible = true;
 
+
 inputBox.addEventListener('submit', function() {
   if (isVisible) {
     text.classList.add('disappear');
