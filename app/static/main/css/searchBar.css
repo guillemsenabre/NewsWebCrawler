@@ -5,7 +5,8 @@
   background-color: #131314;
   transition: 
     opacity 2s,
-    transform 2s;
+    transform 2s,
+    display 0s 2s;
 }
 
 #inputBox {
