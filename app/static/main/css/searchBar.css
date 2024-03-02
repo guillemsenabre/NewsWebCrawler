@@ -4,8 +4,8 @@
   text-align: center;
   background-color: #131314;
   transition: 
-    opacity 1s,
-    transform 1s;
+    opacity 2s,
+    transform 2s;
 }
 
 #inputBox {
