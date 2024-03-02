@@ -17,14 +17,7 @@
     transform 1s;
 }
 
-.disappear {
-  opacity: 0;
-  transform: translateX(-100vw);
-}
 
-.appear {
-  opacity: 1;
-}
 
 #mainText {
   color: #acb0b4;

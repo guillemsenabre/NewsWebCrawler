@@ -3,6 +3,9 @@
   width: 100%;
   text-align: center;
   background-color: #131314;
+  transition: 
+    opacity 1s,
+    transform 1s;
 }
 
 #inputBox {

@@ -1,8 +1,14 @@
 body {
   margin: 0;
+  background-color: #131314;
 }
 
 @font-face {
   font-family: "CodecBold";
   src: url("../../fonts/Codec-Cold-ExtraBold-trial.ttf") format("truetype");
+}
+
+.disappear {
+  opacity: 0;
+  transform: translateX(-100vw);
 }

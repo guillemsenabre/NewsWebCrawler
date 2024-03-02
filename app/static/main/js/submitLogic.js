@@ -1,5 +1,6 @@
 text = document.getElementById("mainTextContainer");
 inputBox = document.getElementById("inputBox");
+searchContainer = document.getElementById("searchBarContainer");
 submitBtn = document.getElementById("searchBtn");
 
 let isVisible = true;
@@ -28,7 +29,7 @@ async function fetchQueryData(query) {
 submitBtn.addEventListener('click', () => {
   query = inputBox.value;
   if (query !== ''){
-    textFadeOut();
+    fadeOut();
     fetchQueryData();
   }
 });
@@ -37,7 +38,7 @@ submitBtn.addEventListener('click', () => {
 inputBox.addEventListener('keydown', (e) => {
   query = inputBox.value;
   if (e.keyCode === 13 && query !== '') {
-    textFadeOut();
+    fadeOut();
     fetchQueryData(query);
   }
 });
@@ -45,6 +46,7 @@ inputBox.addEventListener('keydown', (e) => {
 
 
 
-function textFadeOut () {
+function fadeOut () {
   text.classList.add('disappear');
+  searchContainer.classList.add('disappear')
 }
