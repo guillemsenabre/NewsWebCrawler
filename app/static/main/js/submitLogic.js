@@ -17,7 +17,7 @@ async function fetchQueryData(query) {
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data.query);
+    console.log(data);
     inputBox.value = '';
   })
   .catch(error => {

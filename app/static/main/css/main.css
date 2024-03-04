@@ -11,5 +11,4 @@ body {
 .disappear {
   opacity: 0;
   transform: translateX(-100vw);
-  display: none;
 }
