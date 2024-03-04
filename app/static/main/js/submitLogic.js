@@ -29,8 +29,7 @@ async function fetchQueryData(query) {
 submitBtn.addEventListener('click', () => {
   query = inputBox.value;
   if (query !== ''){
-    fadeOut();
-    fetchQueryData();
+    fetchAndFadeOut(query);
   }
 });
 
@@ -38,14 +37,21 @@ submitBtn.addEventListener('click', () => {
 inputBox.addEventListener('keydown', (e) => {
   query = inputBox.value;
   if (e.keyCode === 13 && query !== '') {
-    fadeOut();
-    fetchQueryData(query);
+    fetchAndFadeOut(query);
   }
 });
 
+// This function makes the text and search bar disappear and fetches
+//data by calling the specific methods.
+function fetchAndFadeOut(query) {
+  fadeOut();
+  fetchQueryData(query);
+}
 
 
 
+// Applies a "fade out" transition (class="disappear") 
+//to the search bar and text 
 function fadeOut () {
   text.classList.add('disappear');
   searchContainer.classList.add('disappear')
