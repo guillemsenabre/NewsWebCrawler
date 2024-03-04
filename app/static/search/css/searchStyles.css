@@ -1,4 +1,11 @@
+header {
+  height: 10vh;
+  width: 100%;
+}
+
+
 #searchContainer {
+  margin: 5vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
