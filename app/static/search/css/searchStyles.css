@@ -1,0 +1,9 @@
+#searchContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+#linksContainer {
+  background-color: #1e1f20;
+}
