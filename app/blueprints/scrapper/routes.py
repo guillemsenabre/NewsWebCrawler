@@ -3,7 +3,7 @@ from .spider import BasicSpider
 
 spider_bp = Blueprint('spider_bp', __name__)
 
-@spider_bp.route('/parse_query', methods=['POST', 'GET'])
+@spider_bp.route('/search', methods=['POST', 'GET'])
 def get_links():
   if request.method == 'POST':
 

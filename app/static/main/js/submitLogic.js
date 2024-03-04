@@ -10,7 +10,10 @@ let isVisible = true;
 async function fetchQueryData(query) {
 
   // Use fetch to send query to Flask route /parse_query
-  const response = await fetch("/parse_query", {
+  // ATTENTION: since no dynamic content is rendered, forms could
+  //be used instead of fetching data. Fetching the data is used for 
+  //learning purposes only.
+  const response = await fetch("/search", {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query }),
