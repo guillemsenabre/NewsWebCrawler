@@ -3,11 +3,13 @@ body {
   background-color: #131314;
 }
 
+/* Main text font*/
 @font-face {
   font-family: "CodecBold";
   src: url("../../fonts/Codec-Cold-ExtraBold-trial.ttf") format("truetype");
 }
 
+/* Search input fade out transition */
 .disappear {
   opacity: 0;
   transform: translateX(-100vw);
