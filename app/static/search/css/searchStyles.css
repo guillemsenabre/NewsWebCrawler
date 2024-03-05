@@ -1,16 +1,65 @@
 header {
   height: 10vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#searchBar {
+  margin-top: 5vh;
+  height: 5vh;
+  width: 45vw;
+  outline: none; /* Removes hoverihg outline*/
+  background-color: #1e1f20;
+  color: #acb0b4;
+  font-size: 1.5vh;
+  border-radius: 6vh;
+  border: none;
+  padding: 0;
+  padding-left: 2vw;
+  padding-right: 6vw; /*To fit submit btn inside the input*/
+  box-shadow: 0vh 0vh 0vh #1e1f20;
+  transition:
+    background-color 0.8s,
+    width 0.8s;
+}
+
+#searchBar:hover {
+  background-color: #282a2c;
+  box-shadow: 0vh 0vh 1vh #1e1f20;
+  width: 47vw;
+}
+
+#searchBtn {
+  margin-left: -4vw; /*To fit submit btn inside the input*/
+  height: 3vh;
+  width: 3vh;
+  font-size: 1.5vh;
+  background-color: transparent;
+  background-image: url(../../media/submit.png);
+  background-size: cover;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  color: transparent;
+  transition: background-color 0.2s;
+}
+
+#searchBtn:hover {
+  background-color: #282a2c;
 }
 
 
-#searchContainer {
-  margin: 5vw;
+/* SEARCH RESULTS */ 
+
+#resultsContainer {
+  margin: 4vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
 
-#linksContainer {
+#resultContainer {
   background-color: #1e1f20;
 }
