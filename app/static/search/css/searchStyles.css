@@ -59,7 +59,11 @@ header {
   grid-template-columns: 1fr 2fr;
 }
 
+.anchorN {
+  text-decoration: none;
+}
 
-#resultContainer {
+.nResultContainer {
   background-color: #1e1f20;
+  color: #acb0b4;
 }

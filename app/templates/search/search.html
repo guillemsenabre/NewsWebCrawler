@@ -17,9 +17,11 @@
   <div id="resultsContainer">
     <ul>
     {% for key, value in data.items() %}
-      <div id="resultContainer" href="{{ value[1] }}">
-        <h1>{{ value[0] }}</h1>
-      </div>  
+      <a class="anchorN" href="{{ value[1] }}">
+        <div class="nResultContainer">
+          <h1>{{ value[0] }}</h1>
+        </div>  
+      </a>
     {% endfor %}
     </ul>
   </div>
