@@ -9,17 +9,21 @@
 </head>
 <body>
   <header>
-    <form action="/search" method="post">
-      <input id="searchBar" placeholder="Search">
-      <button id="searchBtn" type="submit">xx</button>
+    <form action="/search" method="POST">
+      <input id="searchBar" name="query" placeholder="Keep looking around...">
+      <button id="submitBtn" type="submit">xx</button>
     </form>
   </header>
   <div id="resultsContainer">
-    <div id="resultContainer">
-      <h3>Source: Facebook</h3>
-      <h1>Nicola tesla</h1>
-      <p>Nikola Tesla was an engineer, physicist and inventor</p>
-    </div>
+    <ul>
+    {% for key, value in data.items() %}
+      <div id="resultContainer">
+        <h3>{{ value[0] }}</h3>
+        <h1>{{ value[1] }}</h1>
+        <p>{{ value[2] }}</p>
+      </div>
+    {% endfor %}
+    </ul>
   </div>
 </body>  
 </html>

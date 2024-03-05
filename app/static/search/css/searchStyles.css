@@ -31,7 +31,7 @@ header {
   width: 47vw;
 }
 
-#searchBtn {
+#submitBtn {
   margin-left: -4vw; /*To fit submit btn inside the input*/
   height: 3vh;
   width: 3vh;
@@ -46,7 +46,7 @@ header {
   transition: background-color 0.2s;
 }
 
-#searchBtn:hover {
+#submitBtn:hover {
   background-color: #282a2c;
 }
 
