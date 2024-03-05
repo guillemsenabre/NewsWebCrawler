@@ -11,13 +11,13 @@ def get_links():
   # Storing the input query form the user
   query = request.form.to_dict()
 
-  # web crawler instance
+  # Extracting the query string
+  query = query['query']
+  
+  # web crawler class instance
   spider = BasicSpider("links")
 
   # Crawl links and headers from query
   data = spider.get_data(query=query)
-
-
-  print(data)
 
   return render_template('search/search.html', data=data)
