@@ -17,11 +17,9 @@
   <div id="resultsContainer">
     <ul>
     {% for key, value in data.items() %}
-      <div id="resultContainer">
-        <h3>{{ value[0] }}</h3>
-        <h1>{{ value[1] }}</h1>
-        <p>{{ value[2] }}</p>
-      </div>
+      <div id="resultContainer" href="{{ value[1] }}">
+        <h1>{{ value[0] }}</h1>
+      </div>  
     {% endfor %}
     </ul>
   </div>
