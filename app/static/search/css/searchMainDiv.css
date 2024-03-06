@@ -12,6 +12,7 @@
 
 .nResultContainer {
   height: 20vh;
+  border-radius: 1vh;
   width: 100%;
   margin-bottom: 5vh;
   display: flex;
