@@ -21,9 +21,9 @@
 
 # Check the project
 
-This project is still under development. If you want to take a look follow the steps below:
+This project is still **under development**. If you want to take a look follow the steps below:
 
-1. Clone this repository into a local folder `git clone https://github.com/BakiRhina/NewsWebCrawler.git`
+1. Clone this repository into a local folder `git clone https://github.com/guillemsenabre/NewsWebCrawler.git`
 
 2. Using your terminal travel to the folder where you cloned the repo `cd path/to/your/local/folder/NewsWebCrawler/`
 
