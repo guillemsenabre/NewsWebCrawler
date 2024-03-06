@@ -49,38 +49,3 @@ header {
 #submitBtn:hover {
   background-color: #282a2c;
 }
-
-
-/* SEARCH RESULTS */ 
-
-#resultsContainer {
-  margin: 4vw;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.anchorN {
-  text-decoration: none;
-}
-
-.nResultContainer {
-  height: 20vh;
-  width: 100%;
-  margin-bottom: 5vh;
-  display: flex;
-  justify-content: center;
-  background-color: #1e1f20;
-  color: #acb0b4;
-  transition: 
-    box-shadow 0.8s,
-    padding 0.8s;
-}
-
-.nResultContainer:hover {
-  box-shadow: 0vh 0vh 1vh #1e1f20;
-  padding: 1vh;
-}
-
-.nResultContainer h1 {
-  font-size: 4vh;
-}
